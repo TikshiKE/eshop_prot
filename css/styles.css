@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: "Robot", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+  padding: 0 20px 0 20px;
+}
+
+.main-header {
+  border-bottom: 1px solid #259dff;
+}
+
+.main-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-list-nav {
+  display: none;
+  gap: 10px;
+}
+
+.header-link {
+  color: #52524e;
+  font-weight: bold;
+}
+
+.mobile-burger-icon {
+  stroke: #52524e;
+  display: flex;
+}
+
+.cart-icon {
+  fill: #52524e;
+}
+
+.header-icons {
+  display: flex;
+  gap: 20px;
+}
