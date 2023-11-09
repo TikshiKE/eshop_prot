@@ -1,3 +1,10 @@
+:root {
+  --primary-brand-color: #52524e;
+  --primary-blue-color: #259dff;
+  --white-color: #fff;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 body {
   margin: 0;
   font-family: "Robot", sans-serif;
@@ -10,20 +17,36 @@ a {
 ul,
 li {
   list-style: none;
+  padding: 0;
+}
+button {
+  padding: 0;
+}
+
+.is-hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .container {
-  padding: 0 20px 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  max-width: 480px;
 }
 
+/****************HEADER****************/
+
 .main-header {
-  border-bottom: 1px solid #259dff;
 }
 
 .main-header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid var(--primary-blue-color);
 }
 
 .header-navigation {
@@ -37,20 +60,75 @@ li {
 }
 
 .header-link {
-  color: #52524e;
+  color: var(--primary-brand-color);
   font-weight: bold;
 }
 
 .mobile-burger-icon {
-  stroke: #52524e;
+  stroke: var(--primary-brand-color);
   display: flex;
 }
 
 .cart-icon {
-  fill: #52524e;
+  fill: var(--primary-brand-color);
 }
 
 .header-icons {
   display: flex;
   gap: 20px;
+}
+
+.header-mobile-btn {
+  background-color: var(--white-color);
+  border: none;
+}
+
+.cart-btn {
+  background-color: var(--white-color);
+  border: none;
+}
+
+/************MOBILE MENU***********/
+.mobile-menu {
+  overflow: auto;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 50%;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white-color);
+  transform: translateX(-50%);
+  transition: transform var(--transition);
+}
+
+.mobile-btn-close {
+  background-color: var(--white-color);
+  border: none;
+  display: block;
+  top: 30px;
+  right: 30px;
+  height: 36px;
+  width: 36px;
+  position: absolute;
+}
+.mobile-close-icon {
+  fill: var(--primary-brand-color);
+}
+
+.header-navigation-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.header-list-nav-mobile {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+.header-list-item-mobile {
+}
+.header-link {
 }

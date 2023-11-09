@@ -36,15 +36,45 @@
             </li>
           </ul>
         </nav>
+
         <div class="header-icons">
-          <svg class="cart-icon" width="36" height="36">
-            <use href="./images/icons.svg#icon-cart"></use>
-          </svg>
-          <svg class="mobile-burger-icon" width="36" height="36">
-            <use href="./images/icons.svg#icon-burger"></use>
-          </svg>
+          <button type="button" class="cart-btn">
+            <svg class="cart-icon" width="36" height="36">
+              <use href="./images/icons.svg#icon-cart"></use>
+            </svg>
+          </button>
+          <button type="button" class="header-mobile-btn" data-mobile-open>
+            <svg class="mobile-burger-icon" width="36" height="36">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="container mobile-menu is-hidden" data-mobile>
+          <button type="button" class="mobile-btn-close" data-mobile-close>
+            <svg class="mobile-close-icon" width="36" height="36">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="header-navigation-mobile">
+            <ul class="header-list-nav-mobile">
+              <li class="header-list-item-mobile">
+                <a href="./index.html" class="header-link">Catalogue</a>
+              </li>
+              <li class="header-list-item-mobile">
+                <a href="" class="header-link">Latest Arrivals</a>
+              </li>
+              <li class="header-list-item-mobile">
+                <a href="" class="header-link">Special Offers</a>
+              </li>
+              <li class="header-list-item-mobile">
+                <a href="" class="header-link">Our partner's goods</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
+    <script src="./js/mobile-header.js"></script>
   </body>
 </html>
