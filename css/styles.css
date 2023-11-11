@@ -29,7 +29,7 @@ button {
 
 .container {
   width: 100%;
-  max-width: 428px;
+  max-width: 768px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -91,9 +91,56 @@ button {
   border: none;
 }
 
+/************HERO***********/
+.hero {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 20px;
+}
+.hero-categories-title {
+  font-size: 15px;
+}
+.hero-navigation {
+}
+.hero-nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-nav-item {
+}
+
+.hero-nav-item {
+}
+.hero-nav-link {
+  color: var(--primary-brand-color);
+  border: 1px solid var(--primary-brand-color);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 13px;
+}
+
+.hero-link-selected {
+  background-color: var(--primary-brand-color);
+  color: var(--white-color);
+}
+
+.filter {
+  display: flex;
+}
+
+.filter-form {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+}
 /************FOOTER***********/
 
 .main-footer-container {
+  box-shadow: 1px 1px 25px -3px rgba(0, 0, 0, 0.75);
 }
 .footer-navigation {
   display: flex;
