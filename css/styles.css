@@ -185,8 +185,13 @@ button {
 
 /************FILTER***********/
 
+.filter-section {
+  padding-bottom: 20px;
+}
+
 .filter-title {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .filter {
@@ -197,6 +202,27 @@ button {
   display: flex;
   gap: 10px;
   margin: 0 auto;
+}
+
+.filter-search-icon {
+  fill: var(--primary-brand-color);
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid var(--light-text-color);
+  border-radius: 50%;
+}
+
+.filter-input {
+  outline: transparent;
+  padding: 0 15px;
+  border-radius: 15px;
+  border: 1px solid var(--light-text-color);
 }
 /************FOOTER***********/
 
