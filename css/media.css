@@ -13,5 +13,8 @@
   .header-navigation {
     gap: 50px;
   }
+  .latest-grid-item {
+    width: calc((100% - 50px) / 2);
+  }
 }
 /**************DESKTOP*************/
