@@ -31,10 +31,14 @@
               <a href="./index.html" class="header-link">Home</a>
             </li>
             <li class="header-list-item">
-              <a href="#latest" class="header-link">Latest Arrivals</a>
+              <a href="./index.html#latest" class="header-link"
+                >Latest Arrivals</a
+              >
             </li>
             <li class="header-list-item">
-              <a href="#discounts-anchor" class="header-link">Special Offers</a>
+              <a href="./index.html#discounts-anchor" class="header-link"
+                >Special Offers</a
+              >
             </li>
             <li class="header-list-item">
               <a href="" class="header-link">Our partner's goods</a>
@@ -58,12 +62,129 @@
     </header>
 
     <main>
-      <section class="hero container">
-        <header class="hero-header">
-          <h1 class="hero-title">Welcome to Luxury Cloth!</h1>
-          <h2 class="latest-title" id="latest">
-            You can check our latest arrivals!
-          </h2>
+      <section class="item-gallery">
+        <div class="item-gallery-container container">
+          <img
+            src="./images/autumn_shirt.jpg"
+            alt="Autumn Shirt"
+            class="item-main-image"
+          />
+          <div class="item-additional-img-container">
+            <ul class="item-additional-list">
+              <li class="item-additional-item">
+                <img
+                  src="./images/autumn_shirt.jpg"
+                  alt="Autumn Shirt"
+                  class="item-additional-img"
+                />
+              </li>
+              <li class="item-additional-item">
+                <img
+                  src="./images/autumn_shirt.jpg"
+                  alt="Autumn Shirt"
+                  class="item-additional-img"
+                />
+              </li>
+              <li class="item-additional-item">
+                <img
+                  src="./images/autumn_shirt.jpg"
+                  alt="Autumn Shirt"
+                  class="item-additional-img"
+                />
+              </li>
+              <li class="item-additional-item">
+                <img
+                  src="./images/autumn_shirt.jpg"
+                  alt="Autumn Shirt"
+                  class="item-additional-img"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="item-description container">
+        <h2 class="item-title">Autumn Shirt</h2>
+        <p class="item-description">
+          Don't miss out on the opportunity to showcase your love for autumn in
+          a fashionable and budget-friendly way. Grab your Autumn Vibes Graphic
+          Tee today and step into the season with style.
+        </p>
+        <div class="item-form-aside-container">
+          <form class="item-form">
+            <select name="sizes" id="sizes" class="item-size-picker">
+              <option value="32">32</option>
+              <option value="36">36</option>
+              <option value="42">42</option>
+              <option value="48">48</option>
+            </select>
+            <div class="item-color-picker">
+              <div class="item-color-picker-item">
+                <input type="radio" id="orange" name="item-color-radio" />
+                <label for="orange">Orange</label>
+              </div>
+              <div class="item-color-picker-item">
+                <input type="radio" id="red" name="item-color-radio" />
+                <label for="red">Red</label>
+              </div>
+              <div class="item-color-picker-item">
+                <input type="radio" id="black" name="item-color-radio" />
+                <label for="black">Black</label>
+              </div>
+              <div class="item-color-picker-item">
+                <input type="radio" id="white" name="item-color-radio" />
+                <label for="white">White</label>
+              </div>
+            </div>
+            <button type="submit" class="item-form-submit-btn">
+              Add to the basket
+            </button>
+          </form>
+          <aside>
+            <div class="item-aside-container">
+              <div class="item-rating">
+                <img
+                  src="./images/5stars.png"
+                  alt="5 Stars Rating (only for test)"
+                  class="item-5stars-test"
+                />
+              </div>
+              <p class="item-price">$5.99</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="item-reviews container">
+        <header class="item-reviews-header">
+          <h2 class="item-reviews-title">Reviews for this item</h2>
+        </header>
+        <ul class="item-reviews-list">
+          <li class="item-reviews-item">
+            <h3 class="item-reviews-author">John K.</h3>
+            <p class="item-reviews-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              itaque delectus nostrum dolor! Sunt corporis quos, aperiam quam
+              nemo maxime? Eaque impedit, nostrum vitae quae velit saepe maiores
+              veritatis enim?
+            </p>
+          </li>
+          <li class="item-reviews-item">
+            <h3 class="item-reviews-author">Aurora L.</h3>
+            <p class="item-reviews-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              itaque delectus nostrum dolor! Sunt corporis quos, aperiam quam
+              nemo maxime? Eaque impedit, nostrum vitae quae velit saepe maiores
+              veritatis enim?
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="item-alike container">
+        <header class="item-alike-header">
+          <h2 class="item-alike-title">You can check similar items to this!</h2>
         </header>
         <div class="latest-grid">
           <div class="latest-grid-item">
@@ -136,87 +257,6 @@
           </div>
         </div>
       </section>
-
-      <aside class="discounts container" id="discounts-anchor">
-        <header class="discounts-header">
-          <h2 class="discounts-title">
-            You can also check our discount propositions!
-          </h2>
-        </header>
-        <div class="latest-grid" id="latest">
-          <div class="latest-grid-item">
-            <a href="#" class="latest-link"
-              ><img
-                src="./images/urban_jacket.jpg"
-                alt="Urban Explorer Jacket"
-                width=""
-                height=""
-            /></a>
-            <h3 class="latest-subtitle">Urban Explorer Jacket</h3>
-            <p class="latest-description">
-              Explore boldly with our Urban Explorer Jacket. This stylish jacket
-              seamlessly blends functionality with fashion. Water-resistant and
-              breathable, it ensures comfort in any weather. Multiple pockets,
-              adjustable waist belt, and a detachable hood make it a versatile
-              choice for city or outdoor adventures.
-            </p>
-            <p class="latest-price">
-              <span class="latest-price-span">$50.99</span>$45.99
-            </p>
-          </div>
-          <div class="latest-grid-item">
-            <a href="#" class="latest-link"
-              ><img
-                src="./images/velvet_jacket.jpg"
-                alt="Midnight Velvet Blazer"
-                width=""
-                height=""
-            /></a>
-            <h3 class="latest-subtitle">Midnight Velvet Blazer</h3>
-            <p class="latest-description">
-              Indulge in opulence with our Midnight Velvet Blazer. Crafted from
-              luxurious velvet, it radiates sophistication. The deep midnight
-              blue hue adds allure, ideal for formal occasions. Tailored fit,
-              satin lapels, and a single-button closure create a polished look
-              for any event.
-            </p>
-            <p class="latest-price">
-              <span class="latest-price-span">$40.99</span>$25.99
-            </p>
-          </div>
-        </div>
-      </aside>
-
-      <section class="filter-section container">
-        <h2 class="filter-title">Want to explore something for you?</h2>
-        <h3 class="hero-categories-title">Categories</h3>
-        <nav class="hero-navigation">
-          <ul class="hero-nav-list">
-            <li class="hero-nav-item">
-              <a href="" class="hero-nav-link">Shoes</a>
-            </li>
-            <li class="hero-nav-item">
-              <a href="" class="hero-nav-link hero-link-selected">Shirts</a>
-            </li>
-            <li class="hero-nav-item">
-              <a href="" class="hero-nav-link">Underwear</a>
-            </li>
-            <li class="hero-nav-item">
-              <a href="" class="hero-nav-link">Pants</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="filter">
-          <form class="filter-form">
-            <input type="text" name="filter" id="filter" class="filter-input" />
-            <button type="submit" class="filter-btn">
-              <svg class="filter-search-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-search"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
-      </section>
     </main>
 
     <footer class="main-footer">
@@ -236,10 +276,14 @@
               <a href="./index.html" class="footer-link">Catalogue</a>
             </li>
             <li class="footer-list-item">
-              <a href="#latest" class="footer-link">Latest Arrivals</a>
+              <a href="./index.html#latest" class="footer-link"
+                >Latest Arrivals</a
+              >
             </li>
             <li class="footer-list-item">
-              <a href="#discounts-anchor" class="footer-link">Special Offers</a>
+              <a href="./index.html#discounts-anchor" class="footer-link"
+                >Special Offers</a
+              >
             </li>
             <li class="footer-list-item">
               <a href="" class="footer-link">Our partner's goods</a>
@@ -267,10 +311,14 @@
               <a href="./index.html" class="header-link">Catalogue</a>
             </li>
             <li class="header-list-item-mobile">
-              <a href="#latest" class="header-link">Latest Arrivals</a>
+              <a href="./index.html#latest" class="header-link"
+                >Latest Arrivals</a
+              >
             </li>
             <li class="header-list-item-mobile">
-              <a href="" class="header-link">Special Offers</a>
+              <a href="./index.html#discounts-anchor" class="header-link"
+                >Special Offers</a
+              >
             </li>
             <li class="header-list-item-mobile">
               <a href="" class="header-link">Our partner's goods</a>
