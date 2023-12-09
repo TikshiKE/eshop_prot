@@ -1,3 +1,25 @@
+/**************VARIABLES************/
+:root {
+  --primary-black-color: #2c2c2c;
+  --primary-brand-color: #52524e;
+  --primary-blue-color: #259dff;
+  --additional-text-color: #3a3a3a;
+  --light-text-color: #707070;
+  --very-light-text-color: #969696;
+  --white-color: #fff;
+  --green-color: #03830c;
+  --red-color: #df0808;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/************KEYFRAMES************/
+
+@keyframes bounce {
+  to {
+    transform: translateY(-4px);
+  }
+}
+
 /**************TABLET**************/
 @media screen and (min-width: 768px) {
   .header-mobile-btn {
@@ -13,10 +35,187 @@
   .latest-grid-item {
     width: calc((100% - 50px) / 2);
   }
+  .item-gallery-container {
+    flex-direction: row;
+    gap: 70px;
+    margin-top: 70px;
+    margin-bottom: 15px;
+  }
+  .item-additional-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .item-description {
+    font-size: 20px;
+  }
+  .item-title {
+    font-size: 35px;
+  }
+  .item-form-submit-btn {
+    font-size: 16px;
+  }
+  .item-size-picker {
+    padding: 3px 5px 3px 5px;
+  }
+  .hero-nav-list {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .hero-nav-link {
+    font-size: 15px;
+  }
+
+  .item-main-image {
+    width: 450px;
+    height: 450px;
+  }
+
+  .item-additional-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .footer-link {
+    font-size: 14px;
+  }
+
+  .item-go-back-icon {
+    width: 35px;
+    height: 35px;
+  }
 }
 /**************DESKTOP*************/
 @media screen and (min-width: 1158px) {
   .latest-grid-item {
     width: calc((100% - 70px) / 4);
+  }
+  .item-description {
+    margin-bottom: 50px;
+  }
+
+  .header-link {
+    transition: color var(--transition);
+    position: relative;
+  }
+
+  .header-link:hover,
+  .header-link:focus {
+    color: var(--primary-black-color);
+  }
+
+  .header-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    border-radius: 2px;
+    bottom: -24px;
+    left: 0px;
+    transition: background-color var(--transition);
+  }
+
+  .header-link:hover::after,
+  .header-link:focus::after {
+    background-color: var(--primary-blue-color);
+  }
+
+  .cart-btn:hover,
+  .cart-btn:focus {
+    animation: bounce 0.5s infinite alternate;
+  }
+
+  .hero-nav-link {
+    transition: background-color var(--transition), color var(--transition);
+  }
+
+  .hero-nav-link:hover,
+  .hero-nav-link:focus {
+    background-color: var(--primary-brand-color);
+    color: var(--white-color);
+  }
+
+  .filter-btn {
+    transition: background-color var(--transition);
+  }
+  .filter-btn .filter-search-icon {
+    transition: fill var(--transition);
+  }
+
+  .filter-btn:hover,
+  .filter-btn:focus {
+    background-color: var(--primary-brand-color);
+  }
+
+  .filter-btn:hover .filter-search-icon,
+  .filter-btn:focus .filter-search-icon {
+    fill: var(--white-color);
+  }
+
+  .latest-link:hover,
+  .latest-link:focus {
+    animation: bounce 0.5s infinite alternate;
+  }
+
+  .item-additional-img {
+    transition: transform var(--transition);
+  }
+
+  .item-additional-img:hover,
+  .item-additional-img:focus {
+    transform: scale(1.5);
+  }
+
+  .item-form-submit-btn {
+    transition: background-color var(--transition), color var(--transition);
+  }
+
+  .item-form-submit-btn:hover,
+  .item-form-submit-btn:focus {
+    color: var(--white-color);
+    background-color: var(--primary-brand-color);
+  }
+
+  .footer-link {
+    transition: font-weight var(--transition);
+  }
+
+  .footer-link:hover,
+  .footer-link:focus {
+    font-weight: 700;
+  }
+
+  .cart-button {
+    transition: background-color var(--transition), color var(--transition);
+  }
+
+  .cart-button:hover,
+  .cart-button:focus {
+    color: var(--white-color);
+    background-color: var(--primary-brand-color);
+  }
+
+  .checkout-submit-btn {
+    transition: background-color var(--transition), color var(--transition);
+  }
+
+  .checkout-submit-btn:hover,
+  .checkout-submit-btn:focus {
+    color: var(--white-color);
+    background-color: var(--primary-brand-color);
+  }
+
+  .checkout-go-back {
+    transition: background-color var(--transition), color var(--transition);
+  }
+
+  .checkout-go-back:hover,
+  .checkout-go-back:focus {
+    color: var(--white-color);
+    background-color: var(--primary-brand-color);
+  }
+  .item-additional-list {
+    gap: 40px;
   }
 }

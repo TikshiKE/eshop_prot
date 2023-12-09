@@ -41,7 +41,9 @@
               >
             </li>
             <li class="header-list-item">
-              <a href="" class="header-link">Our partner's goods</a>
+              <a href="./index.html#filter-anchor" class="header-link"
+                >Our partner's goods</a
+              >
             </li>
           </ul>
         </nav>
@@ -62,6 +64,14 @@
     </header>
 
     <main>
+      <aside class="item-go-back">
+        <button class="item-go-back-btn" id="go-back-id">
+          <svg class="item-go-back-icon" width="25" height="25">
+            <use href="./images/icons.svg#icon-back-arrow"></use>
+          </svg>
+        </button>
+      </aside>
+
       <section class="item-gallery">
         <div class="item-gallery-container container">
           <img
@@ -121,19 +131,43 @@
             </select>
             <div class="item-color-picker">
               <div class="item-color-picker-item">
-                <input type="radio" id="orange" name="item-color-radio" />
+                <input
+                  type="radio"
+                  id="orange"
+                  name="item-color-radio"
+                  class="item-color-picker-input"
+                  required
+                />
                 <label for="orange">Orange</label>
               </div>
               <div class="item-color-picker-item">
-                <input type="radio" id="red" name="item-color-radio" />
+                <input
+                  type="radio"
+                  id="red"
+                  name="item-color-radio"
+                  class="item-color-picker-input"
+                  required
+                />
                 <label for="red">Red</label>
               </div>
               <div class="item-color-picker-item">
-                <input type="radio" id="black" name="item-color-radio" />
+                <input
+                  type="radio"
+                  id="black"
+                  name="item-color-radio"
+                  class="item-color-picker-input"
+                  required
+                />
                 <label for="black">Black</label>
               </div>
               <div class="item-color-picker-item">
-                <input type="radio" id="white" name="item-color-radio" />
+                <input
+                  type="radio"
+                  id="white"
+                  name="item-color-radio"
+                  class="item-color-picker-input"
+                  required
+                />
                 <label for="white">White</label>
               </div>
             </div>
@@ -158,11 +192,19 @@
 
       <section class="item-reviews container">
         <header class="item-reviews-header">
+          <svg class="item-review-icon" width="25" height="25">
+            <use href="./images/icons.svg#icon-review"></use>
+          </svg>
           <h2 class="item-reviews-title">Reviews for this item</h2>
         </header>
         <ul class="item-reviews-list">
           <li class="item-reviews-item">
-            <h3 class="item-reviews-author">John K.</h3>
+            <div class="item-review-additional-div">
+              <svg class="item-review-icon-author" width="20" height="20">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+              <h3 class="item-reviews-author">John K.</h3>
+            </div>
             <p class="item-reviews-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
               itaque delectus nostrum dolor! Sunt corporis quos, aperiam quam
@@ -171,7 +213,12 @@
             </p>
           </li>
           <li class="item-reviews-item">
-            <h3 class="item-reviews-author">Aurora L.</h3>
+            <div class="item-review-additional-div">
+              <svg class="item-review-icon-author" width="20" height="20">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+              <h3 class="item-reviews-author">Aurora L.</h3>
+            </div>
             <p class="item-reviews-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
               itaque delectus nostrum dolor! Sunt corporis quos, aperiam quam
@@ -204,7 +251,7 @@
             <p class="latest-price">$5.99</p>
           </div>
           <div class="latest-grid-item">
-            <a href="#" class="latest-link"
+            <a href="./item-example.html" class="latest-link"
               ><img
                 src="./images/denim_jacket.jpg"
                 alt="Denim Jacket"
@@ -221,7 +268,7 @@
             <p class="latest-price">$59.99</p>
           </div>
           <div class="latest-grid-item">
-            <a href="#" class="latest-link"
+            <a href="./item-example.html" class="latest-link"
               ><img
                 src="./images/floral_dress.jpg"
                 alt="Floral Maxi Dress"
@@ -238,7 +285,7 @@
             <p class="latest-price">$79.99</p>
           </div>
           <div class="latest-grid-item">
-            <a href="#" class="latest-link"
+            <a href="./item-example.html" class="latest-link"
               ><img
                 src="./images/joger.jpg"
                 alt="Jogger Set"
@@ -286,7 +333,9 @@
               >
             </li>
             <li class="footer-list-item">
-              <a href="" class="footer-link">Our partner's goods</a>
+              <a href="./index.html#filter-anchor" class="footer-link"
+                >Our partner's goods</a
+              >
             </li>
           </ul>
         </nav>
@@ -321,12 +370,15 @@
               >
             </li>
             <li class="header-list-item-mobile">
-              <a href="" class="header-link">Our partner's goods</a>
+              <a href="./index.html#filter-anchor" class="header-link"
+                >Our partner's goods</a
+              >
             </li>
           </ul>
         </nav>
       </div>
     </div>
     <script src="./js/mobile-header.js"></script>
+    <script src="./js/fake-go-back.js"></script>
   </body>
 </html>

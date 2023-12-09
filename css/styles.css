@@ -1,12 +1,13 @@
 :root {
+  --primary-black-color: #2c2c2c;
   --primary-brand-color: #52524e;
   --primary-blue-color: #259dff;
   --additional-text-color: #3a3a3a;
   --light-text-color: #707070;
+  --very-light-text-color: #969696;
   --white-color: #fff;
   --green-color: #03830c;
   --red-color: #df0808;
-  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -21,6 +22,18 @@ h5,
 p {
   margin: 0;
   padding: 0;
+}
+
+input {
+  outline: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--primary-black-color);
 }
 
 body {
@@ -52,13 +65,6 @@ button {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-}
-
-.is-hidden {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
 }
 
 /****************HEADER****************/
@@ -192,6 +198,7 @@ button {
   border-radius: 5px;
   padding: 5px;
   font-size: 13px;
+  background-color: transparent;
 }
 
 .hero-link-selected {
@@ -223,6 +230,7 @@ button {
 
 .filter {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .filter-form {
@@ -247,7 +255,6 @@ button {
 }
 
 .filter-input {
-  outline: transparent;
   padding: 0 15px;
   border-radius: 15px;
   border: 1px solid var(--light-text-color);
@@ -257,6 +264,7 @@ button {
 .main-footer-container {
   box-shadow: 1px 1px 25px -3px rgba(0, 0, 0, 0.75);
   padding-bottom: 20px;
+  margin-top: 40px;
 }
 .footer-navigation {
   display: flex;
@@ -326,8 +334,22 @@ button {
 }
 
 /*****************ITEM PAGE***************/
+
+.item-go-back {
+  position: absolute;
+  top: 80px;
+  left: 10px;
+}
+.item-go-back-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.item-go-back-icon {
+  fill: var(--primary-brand-color);
+}
+
 .item-title {
-  color: var(--primary-brand-color);
 }
 .item-gallery-container {
   display: flex;
@@ -362,6 +384,7 @@ button {
 }
 
 .item-description {
+  color: var(--light-text-color);
   margin-bottom: 20px;
 }
 .item-title {
@@ -376,9 +399,24 @@ button {
 }
 .item-size-picker {
   width: 100px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.item-size-picker option {
+  font-weight: 500;
 }
 .item-color-picker {
 }
+
+.item-color-picker-input {
+  color: var(--primary-brand-color);
+  cursor: pointer;
+}
+
+.item-color-picker-input label {
+  color: var(--light-text-color);
+}
+
 .item-aside-container {
   display: flex;
   flex-direction: column;
@@ -395,8 +433,9 @@ button {
 }
 .item-form-aside-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 50px;
+  padding: 0 20px 0 20px;
 }
 .item-form-submit-btn {
   display: flex;
@@ -407,12 +446,28 @@ button {
   border: 1px solid var(--light-text-color);
   border-radius: 10px;
   cursor: pointer;
+  color: var(--primary-black-color);
 }
 
 .item-reviews {
 }
 
+.item-review-additional-div {
+  display: flex;
+  gap: 5px;
+}
+
+.item-review-icon-author {
+  fill: var(--primary-brand-color);
+}
 .item-reviews-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-review-icon {
+  fill: var(--primary-black-color);
 }
 .item-reviews-title {
 }
@@ -428,8 +483,10 @@ button {
   gap: 10px;
 }
 .item-reviews-author {
+  color: var(--primary-brand-color);
 }
 .item-reviews-description {
+  color: var(--light-text-color);
 }
 
 .item-alike {
@@ -455,6 +512,12 @@ button {
   margin-top: 20px;
   margin-bottom: 40px;
 }
+
+.cart-quantity-picker {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 .cart-list {
   display: flex;
   flex-direction: column;
@@ -494,6 +557,7 @@ button {
 .cart-close-btn {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .cart-btns {
@@ -570,6 +634,7 @@ button {
   font-weight: 500;
 }
 .checkout-form-radio {
+  cursor: pointer;
 }
 .checkout-price {
   color: var(--green-color);
@@ -590,8 +655,25 @@ button {
   display: flex;
   justify-content: space-between;
   max-width: 300px;
+  align-items: center;
 }
 .checkout-form-label {
+  color: var(--light-text-color);
 }
 .checkout-form-input {
+  border-radius: 7px;
+  border: 1px solid var(--primary-brand-color);
+  padding: 4px 7px 4px 7px;
+}
+
+.checkout-form-input::placeholder {
+  color: var(--very-light-text-color);
+}
+
+/***************ADDITIONAL CLASSES TO AVOID USING IMPORTANT******************/
+.is-hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
