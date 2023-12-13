@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width='device-width', initial-scale=1.0" />
-    <title>Student E-shop Project</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,6 +31,12 @@
               <a href="./index.html" class="header-link">Home</a>
             </li>
             <li class="header-list-item">
+              <a href="./catalogue.html" class="header-link">Catalogue</a>
+            </li>
+            <li class="header-list-item">
+              <a href="./shipping.html" class="header-link">Shipping</a>
+            </li>
+            <li class="header-list-item">
               <a href="./index.html#latest" class="header-link"
                 >Latest Arrivals</a
               >
@@ -40,14 +46,15 @@
                 >Special Offers</a
               >
             </li>
-
             <li class="header-list-item">
-              <a href="./shipping.html" class="header-link">Shipping</a>
+              <a href="./index.html#seasonal" class="header-link"
+                >Season Collection</a
+              >
             </li>
           </ul>
         </nav>
 
-        <form class="filter-form" data-search>
+        <form class="filter-form" data-search action="./search.html">
           <input type="text" name="filter" id="filter" class="filter-input" />
           <button type="submit" class="filter-btn">
             <svg class="filter-search-icon" width="16" height="16">
@@ -56,6 +63,11 @@
           </button>
         </form>
         <div class="header-icons">
+          <a href="./cart-example.html" class="cart-btn">
+            <svg class="cart-icon" width="36" height="36">
+              <use href="./images/icons.svg#icon-cart"></use>
+            </svg>
+          </a>
           <button type="button" class="header-mobile-btn" data-mobile-open>
             <svg class="mobile-burger-icon" width="36" height="36">
               <use href="./images/icons.svg#icon-burger"></use>
@@ -71,68 +83,87 @@
           Please check your items and proceed with payment
         </h2>
         <ul class="cart-list">
-          <li class="cart-item">
-            <div class="cart-item-img-container">
-              <select
-                name="quantity"
-                id="quantity"
-                class="cart-quantity-picker"
-              >
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-              <img
-                src="./images/autumn_shirt.jpg"
-                alt="Autumn Shirt"
-                class="cart-list-img"
-              />
-            </div>
-            <div class="cart-item-others">
-              <p class="cart-size">Size: 32</p>
-              <p class="cart-price">
-                Price: <span class="cart-price-span">$11.98</span>
-              </p>
-              <button type="button" class="cart-close-btn">
-                <svg class="mobile-close-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-close"></use>
-                </svg>
-              </button>
-            </div>
-          </li>
-          <li class="cart-item">
-            <div class="cart-item-img-container">
-              <select
-                name="quantity"
-                id="quantity"
-                class="cart-quantity-picker"
-              >
-                <option value="1">1</option>
-                <option value="2" selected>2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-              <img
-                src="./images/velvet_jacket.jpg"
-                alt="Velvet Jacket"
-                class="cart-list-img"
-              />
-            </div>
-            <div class="cart-item-others">
-              <p class="cart-size">Size: 36</p>
-              <p class="cart-price">
-                Price: <span class="cart-price-span">$25.99</span>
-              </p>
-              <button type="button" class="cart-close-btn">
-                <svg class="mobile-close-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-close"></use>
-                </svg>
-              </button>
-            </div>
-          </li>
+          <div class="cart-item-div">
+            <li class="cart-item">
+              <div class="cart-item-img-container">
+                <div class="cart-select-div">
+                  <label for="quantity" class="cart-select-label"
+                    >Items amount:</label
+                  >
+                  <select
+                    name="quantity"
+                    id="quantity"
+                    class="cart-quantity-picker"
+                  >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+
+                <img
+                  src="./images/autumn_shirt.jpg"
+                  alt="Autumn Shirt"
+                  class="cart-list-img"
+                />
+                <p class="cart-color">Color: Orange</p>
+                <p class="cart-size">Size: 32</p>
+              </div>
+              <div class="cart-item-others">
+                <p class="cart-price">
+                  Price: <span class="cart-price-span">$11.98</span>
+                </p>
+                <button type="button" class="cart-close-btn">
+                  <svg class="mobile-close-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </div>
+
+          <div class="cart-item-div">
+            <li class="cart-item">
+              <div class="cart-item-img-container">
+                <div class="cart-select-div">
+                  <label for="quantity2" class="cart-select-label"
+                    >Items amount:</label
+                  >
+                  <select
+                    name="quantity2"
+                    id="quantity2"
+                    class="cart-quantity-picker"
+                  >
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+
+                <img
+                  src="./images/velvet_jacket.jpg"
+                  alt="Velvet Jacket"
+                  class="cart-list-img"
+                />
+                <p class="cart-color">Color: Black</p>
+                <p class="cart-size">Size: 36</p>
+              </div>
+              <div class="cart-item-others">
+                <p class="cart-price">
+                  Price: <span class="cart-price-span">$25.99</span>
+                </p>
+                <button type="button" class="cart-close-btn">
+                  <svg class="mobile-close-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </div>
         </ul>
         <p class="cart-total-price">
           Total price: <span class="cart-total-price-span">$37.97</span>
@@ -142,11 +173,11 @@
       <div class="cart-btns container">
         <ul class="cart-btns-list">
           <li class="cart-btns-item">
-            <a href="./index.html" class="cart-button">Go back home</a>
+            <a href="./index.html" class="cart-button">Return to home</a>
           </li>
           <li class="cart-btns-item">
             <a href="./checkout-example.html" class="cart-button"
-              >Go to checkout</a
+              >Proceed to checkout</a
             >
           </li>
         </ul>
@@ -170,6 +201,12 @@
               <a href="./index.html" class="footer-link">Home</a>
             </li>
             <li class="footer-list-item">
+              <a href="./catalogue.html" class="footer-link">Catalogue</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="./shipping.html" class="footer-link">Shipping</a>
+            </li>
+            <li class="footer-list-item">
               <a href="./index.html#latest" class="footer-link"
                 >Latest Arrivals</a
               >
@@ -179,9 +216,10 @@
                 >Special Offers</a
               >
             </li>
-
             <li class="footer-list-item">
-              <a href="./shipping.html" class="footer-link">Shipping</a>
+              <a href="./index.html#seasonal" class="footer-link"
+                >Season Collection</a
+              >
             </li>
           </ul>
         </nav>
@@ -206,6 +244,12 @@
               <a href="./index.html" class="header-link">Home</a>
             </li>
             <li class="header-list-item-mobile">
+              <a href="./catalogue.html" class="header-link">Catalogue</a>
+            </li>
+            <li class="header-list-item-mobile">
+              <a href="./shipping.html" class="header-link">Shipping</a>
+            </li>
+            <li class="header-list-item-mobile">
               <a href="./index.html#latest" class="header-link"
                 >Latest Arrivals</a
               >
@@ -215,9 +259,11 @@
                 >Special Offers</a
               >
             </li>
-            s
+
             <li class="header-list-item-mobile">
-              <a href="./shipping.html" class="header-link">Shipping</a>
+              <a href="./index.html#seasonal" class="header-link"
+                >Season Collection</a
+              >
             </li>
           </ul>
         </nav>

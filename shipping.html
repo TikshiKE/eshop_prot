@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container main-header-container">
+        <nav class="header-navigation">
+          <a href="./index.html" class="logo-link">
+            <img
+              class="logo-img"
+              width="64"
+              height="64"
+              src="./images/logo.png"
+              alt="Luxury Cloth logo"
+            />
+          </a>
+          <ul class="header-list-nav">
+            <li class="header-list-item">
+              <a href="./index.html" class="header-link">Home</a>
+            </li>
+            <li class="header-list-item">
+              <a href="./catalogue.html" class="header-link">Catalogue</a>
+            </li>
+            <li class="header-list-item">
+              <a href="./shipping.html" class="header-link">Shipping</a>
+            </li>
+            <li class="header-list-item">
+              <a href="./index.html#latest" class="header-link"
+                >Latest Arrivals</a
+              >
+            </li>
+            <li class="header-list-item">
+              <a href="./index.html#discounts-anchor" class="header-link"
+                >Special Offers</a
+              >
+            </li>
+            <li class="header-list-item">
+              <a href="./index.html#seasonal" class="header-link"
+                >Season Collection</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <form class="filter-form" data-search action="./search.html">
+          <input type="text" name="filter" id="filter" class="filter-input" />
+          <button type="submit" class="filter-btn">
+            <svg class="filter-search-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="header-icons">
+          <a href="./cart-example.html" class="cart-btn">
+            <svg class="cart-icon" width="36" height="36">
+              <use href="./images/icons.svg#icon-cart"></use>
+            </svg>
+          </a>
+          <button type="button" class="header-mobile-btn" data-mobile-open>
+            <svg class="mobile-burger-icon" width="36" height="36">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="shipping-section container">
+        <header class="shipping-header">
+          <h1 class="shipping-main-heading">Shipping Options</h1>
+          <p class="shipping-main-description">
+            Choose the shipping option that best suits your needs. We offer a
+            variety of options to ensure your package arrives safely and on
+            time.
+          </p>
+        </header>
+
+        <ul class="shipping-list">
+          <li class="shipping-list-item">
+            <img
+              class="shipping-img"
+              src="./images/courier.jpg"
+              alt="Courier with boxes"
+            />
+            <div class="shipping-item-div">
+              <svg class="shipping-icon" width="30" height="30">
+                <use href="./images/icons.svg#icon-courier"></use>
+              </svg>
+              <h2 class="shipping-heading">Courier</h2>
+            </div>
+            <p class="shipping-description">
+              Estimated delivery in 3-5 business days.
+            </p>
+          </li>
+          <li class="shipping-list-item">
+            <img
+              class="shipping-img"
+              src="./images/selfPickup.jpg"
+              alt="Pickup point in the shop"
+            />
+            <div class="shipping-item-div">
+              <svg class="shipping-icon" width="30" height="30">
+                <use href="./images/icons.svg#icon-selfPickup"></use>
+              </svg>
+              <h2 class="shipping-heading">Self-pickup</h2>
+            </div>
+
+            <p class="shipping-description">
+              Estimated delivery in 3-5 business days.
+            </p>
+          </li>
+          <li class="shipping-list-item">
+            <img
+              class="shipping-img"
+              src="./images/postBox.jpg"
+              alt="Post Box"
+            />
+            <div class="shipping-item-div">
+              <svg class="shipping-icon" width="30" height="30">
+                <use href="./images/icons.svg#icon-postBox"></use>
+              </svg>
+              <h2 class="shipping-heading">Post Box</h2>
+            </div>
+
+            <p class="shipping-description">
+              Estimated delivery in 1-2 business days.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container main-footer-container">
+        <nav class="footer-navigation">
+          <a href="./index.html" class="logo-link">
+            <img
+              class="logo-img"
+              width="64"
+              height="64"
+              src="./images/logo.png"
+              alt="Luxury Cloth logo"
+            />
+          </a>
+          <ul class="footer-list-nav">
+            <li class="footer-list-item">
+              <a href="./index.html" class="footer-link">Home</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="./catalogue.html" class="footer-link">Catalogue</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="./shipping.html" class="footer-link">Shipping</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="./index.html#latest" class="footer-link"
+                >Latest Arrivals</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a href="./index.html#discounts-anchor" class="footer-link"
+                >Special Offers</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a href="./index.html#seasonal" class="footer-link"
+                >Season Collection</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <span class="disclaimer"
+          >Please note this project was made by the group of students from
+          INFO-A PEF ČZU (Holovko I., Kren E., Bas M.), it isn't intended for
+          commercial purposes</span
+        >
+      </div>
+    </footer>
+
+    <div class="backdrop is-hidden" data-mobile>
+      <div class="container mobile-menu">
+        <button type="button" class="mobile-btn-close" data-mobile-close>
+          <svg class="mobile-close-icon" width="36" height="36">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="header-navigation-mobile">
+          <ul class="header-list-nav-mobile">
+            <li class="header-list-item-mobile">
+              <a href="./index.html" class="header-link">Home</a>
+            </li>
+            <li class="header-list-item-mobile">
+              <a href="./catalogue.html" class="header-link">Catalogue</a>
+            </li>
+            <li class="header-list-item-mobile">
+              <a href="./shipping.html" class="header-link">Shipping</a>
+            </li>
+            <li class="header-list-item-mobile">
+              <a href="./index.html#latest" class="header-link"
+                >Latest Arrivals</a
+              >
+            </li>
+            <li class="header-list-item-mobile">
+              <a href="./index.html#discounts-anchor" class="header-link"
+                >Special Offers</a
+              >
+            </li>
+
+            <li class="header-list-item-mobile">
+              <a href="./index.html#seasonal" class="header-link"
+                >Season Collection</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script src="./js/mobile-header.js"></script>
+  </body>
+</html>

@@ -21,7 +21,17 @@
 }
 
 /**************TABLET**************/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 878px) {
+  .welcome-screen {
+    height: 300px;
+  }
+  .hero-titles-div {
+    gap: 10px;
+    padding: 40px;
+  }
+  .hero-subtitle {
+    font-size: 15px;
+  }
   .header-mobile-btn {
     display: none;
   }
@@ -84,9 +94,75 @@
     width: 35px;
     height: 35px;
   }
+
+  .shipping-img {
+    width: 500px;
+  }
+  .shipping-heading {
+    font-size: 30px;
+  }
+  .shipping-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .shipping-description {
+    font-size: 15px;
+  }
+  .shipping-main-heading {
+    font-size: 40px;
+  }
+  .shipping-main-description {
+    font-size: 20px;
+  }
+  .shipping-header {
+    margin-bottom: 40px;
+  }
+  .delivery-link {
+    height: 400px;
+  }
+  .discounts-title {
+    font-size: 25px;
+  }
+  .latest-title {
+    font-size: 25px;
+  }
+  .cart-color {
+    margin-left: 40px;
+  }
+  .cart-list-img {
+    width: 100px;
+    height: 100px;
+  }
+  .catalogue-list {
+    gap: 40px;
+  }
+  .catalogue-link {
+    font-size: 20px;
+    padding: 7px;
+  }
+  .catalogue-additional-line {
+    border-bottom: 4px double var(--very-light-text-color);
+  }
+  .item-description-text {
+    max-width: 550px;
+  }
+  .item-description-additional-container {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  .item-form-aside-container {
+    max-width: 850px;
+    margin: 0 auto;
+  }
 }
 /**************DESKTOP*************/
 @media screen and (min-width: 1158px) {
+  .welcome-screen {
+    height: 450px;
+  }
+  .hero-titles-div {
+    padding: 55px;
+  }
   .latest-grid-item {
     width: calc((100% - 70px) / 4);
   }
@@ -217,5 +293,21 @@
   }
   .item-additional-list {
     gap: 40px;
+  }
+  .delivery-link {
+    height: 550px;
+  }
+  .cart-list-img {
+    width: 120px;
+    height: 120px;
+  }
+  .catalogue-link {
+    transition: background-color var(--transition), color var(--transition);
+  }
+
+  .catalogue-link:hover,
+  .catalogue-link:focus {
+    color: var(--white-color);
+    background-color: var(--primary-black-color);
   }
 }

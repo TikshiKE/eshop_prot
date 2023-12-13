@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Autumn Shirt</title>
+    <meta name="viewport" content="width='device-width', initial-scale=1.0" />
+    <title>Catalogue</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -78,209 +78,85 @@
     </header>
 
     <main>
-      <aside class="item-go-back container">
-        <button class="item-go-back-btn" id="go-back-id">
-          <svg class="item-go-back-icon" width="25" height="25">
-            <use href="./images/icons.svg#icon-back-arrow"></use>
-          </svg>
-        </button>
-      </aside>
-
-      <section class="item-gallery">
-        <div class="item-gallery-container container">
-          <img
-            src="./images/autumn_shirt.jpg"
-            alt="Autumn Shirt"
-            class="item-main-image"
-          />
-          <div class="item-additional-img-container">
-            <ul class="item-additional-list">
-              <li class="item-additional-item">
-                <img
-                  src="./images/autumn_shirt.jpg"
-                  alt="Autumn Shirt"
-                  class="item-additional-img"
-                />
-              </li>
-              <li class="item-additional-item">
-                <img
-                  src="./images/autumn_shirt.jpg"
-                  alt="Autumn Shirt"
-                  class="item-additional-img"
-                />
-              </li>
-              <li class="item-additional-item">
-                <img
-                  src="./images/autumn_shirt.jpg"
-                  alt="Autumn Shirt"
-                  class="item-additional-img"
-                />
-              </li>
-              <li class="item-additional-item">
-                <img
-                  src="./images/autumn_shirt.jpg"
-                  alt="Autumn Shirt"
-                  class="item-additional-img"
-                />
-              </li>
-            </ul>
+      <section class="seasonal search container">
+        <header class="hero-header">
+          <h2 class="latest-title">Searching results:</h2>
+        </header>
+        <div class="latest-grid">
+          <div class="latest-grid-item">
+            <a href="./item-example.html" class="latest-link"
+              ><img
+                src="./images/autumn_shirt.jpg"
+                alt="Autumn Shirt"
+                width=""
+                height=""
+            /></a>
+            <h3 class="latest-subtitle">Autumn Shirt</h3>
+            <p class="latest-description">
+              Don't miss out on the opportunity to showcase your love for autumn
+              in a fashionable and budget-friendly way. Grab your Autumn Vibes
+              Graphic Tee today and step into the season with style.
+            </p>
+            <p class="latest-price">$5.99</p>
+          </div>
+          <div class="latest-grid-item">
+            <a href="./item-example.html" class="latest-link"
+              ><img
+                src="./images/denim_jacket.jpg"
+                alt="Denim Jacket"
+                width=""
+                height=""
+            /></a>
+            <h3 class="latest-subtitle">Modern Denim Jacket</h3>
+            <p class="latest-description">
+              Elevate your style with our latest denim jacket featuring a modern
+              design and comfortable fit. Made from high-quality denim, this
+              jacket is perfect for both casual and semi-formal occasions. Stay
+              on-trend with this versatile piece.
+            </p>
+            <p class="latest-price">$59.99</p>
+          </div>
+          <div class="latest-grid-item">
+            <a href="./item-example.html" class="latest-link"
+              ><img
+                src="./images/floral_dress.jpg"
+                alt="Floral Maxi Dress"
+                width=""
+                height=""
+            /></a>
+            <h3 class="latest-subtitle">Chic Floral Maxi Dress</h3>
+            <p class="latest-description">
+              Embrace the beauty of floral patterns with our chic maxi dress.
+              This elegant and flowy dress is perfect for summer events and
+              special occasions. The flattering silhouette and vibrant floral
+              print make it a must-have for your wardrobe.
+            </p>
+            <p class="latest-price">$79.99</p>
+          </div>
+          <div class="latest-grid-item">
+            <a href="./item-example.html" class="latest-link"
+              ><img
+                src="./images/joger.jpg"
+                alt="Jogger Set"
+                width=""
+                height=""
+            /></a>
+            <h3 class="latest-subtitle">Athleisure Jogger Set</h3>
+            <p class="latest-description">
+              Stay comfortable and stylish with our athleisure jogger set. This
+              trendy two-piece ensemble combines fashion and functionality,
+              making it ideal for both workouts and casual outings. The set
+              includes a cozy hoodie and matching joggers for a laid-back yet
+              fashionable look.
+            </p>
+            <p class="latest-price">$49.99</p>
           </div>
         </div>
       </section>
 
-      <section class="item-description container">
-        <h2 class="item-title">Autumn Shirt</h2>
-        <div class="item-description-additional-container">
-          <p class="item-description-text">
-            Don't miss out on the opportunity to showcase your love for autumn
-            in a fashionable and budget-friendly way. Grab your Autumn Vibes
-            Graphic Tee today and step into the season with style.
-          </p>
-          <ul class="item-description-list">
-            <li>
-              <strong>Rating:</strong>
-              <img
-                src="./images/5stars.png"
-                alt="5 Stars Rating (only for test)"
-                class="item-5stars-test"
-              />
-            </li>
-            <li><strong>Material:</strong> Cotton 100%</li>
-            <li><strong>Made in:</strong> Turkey</li>
-          </ul>
-        </div>
-        <div class="item-form-aside-container">
-          <form class="item-form">
-            <div class="item-form-inputs-container">
-              <div class="item-size-div">
-                <label for="sizes" class="item-size-label">Select Size:</label>
-                <select name="sizes" id="sizes" class="item-size-picker">
-                  <option value="32">32</option>
-                  <option value="36">36</option>
-                  <option value="42">42</option>
-                  <option value="48">48</option>
-                </select>
-              </div>
-
-              <div class="item-color-picker">
-                <p class="item-color-title">Select color:</p>
-                <div class="item-color-picker-item">
-                  <input
-                    type="radio"
-                    id="orange"
-                    name="item-color-radio"
-                    class="item-color-picker-input"
-                    required
-                  />
-                  <label for="orange">Orange</label>
-                </div>
-                <div class="item-color-picker-item">
-                  <input
-                    type="radio"
-                    id="red"
-                    name="item-color-radio"
-                    class="item-color-picker-input"
-                    required
-                  />
-                  <label for="red">Red</label>
-                </div>
-                <div class="item-color-picker-item">
-                  <input
-                    type="radio"
-                    id="black"
-                    name="item-color-radio"
-                    class="item-color-picker-input"
-                    required
-                  />
-                  <label for="black">Black</label>
-                </div>
-                <div class="item-color-picker-item">
-                  <input
-                    type="radio"
-                    id="white"
-                    name="item-color-radio"
-                    class="item-color-picker-input"
-                    required
-                  />
-                  <label for="white">White</label>
-                </div>
-              </div>
-            </div>
-            <button type="submit" class="item-form-submit-btn">
-              Add to Cart
-            </button>
-          </form>
-          <aside>
-            <div class="item-aside-container">
-              <p class="item-price-heading">Price:</p>
-              <p class="item-price">$5.99</p>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="item-reviews container">
-        <header class="item-reviews-header">
-          <svg class="item-review-icon" width="25" height="25">
-            <use href="./images/icons.svg#icon-review"></use>
-          </svg>
-          <h2 class="item-reviews-title">Reviews for this item</h2>
-        </header>
-        <ul class="item-reviews-list">
-          <li class="item-reviews-item">
-            <div class="item-review-additional-div">
-              <div style="display: flex; gap: 5px; align-items: center">
-                <svg class="item-review-icon-author" width="20" height="20">
-                  <use href="./images/icons.svg#icon-user"></use>
-                </svg>
-                <h3 class="item-reviews-author">John K.</h3>
-              </div>
-              <div style="align-items: center; display: flex; gap: 20px">
-                <span class="item-reviews-author-date">12.01.2022</span>
-                <img
-                  src="./images/4stars.png"
-                  alt="4 Stars Rating"
-                  class="item-5stars-test"
-                />
-              </div>
-            </div>
-            <p class="item-reviews-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              itaque delectus nostrum dolor! Sunt corporis quos, aperiam quam
-              nemo maxime? Eaque impedit, nostrum vitae quae velit saepe maiores
-              veritatis enim?
-            </p>
-          </li>
-          <li class="item-reviews-item">
-            <div class="item-review-additional-div">
-              <div style="display: flex; gap: 5px; align-items: center">
-                <svg class="item-review-icon-author" width="20" height="20">
-                  <use href="./images/icons.svg#icon-user"></use>
-                </svg>
-                <h3 class="item-reviews-author">Aurora O.</h3>
-              </div>
-              <div style="align-items: center; display: flex; gap: 20px">
-                <span class="item-reviews-author-date">02.10.2023</span>
-                <img
-                  src="./images/5stars.png"
-                  alt="5 Stars Rating"
-                  class="item-5stars-test"
-                />
-              </div>
-            </div>
-            <p class="item-reviews-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              itaque delectus nostrum dolor! Sunt corporis quos, aperiam quam
-              nemo maxime? Eaque impedit, nostrum vitae quae velit saepe maiores
-              veritatis enim?
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="item-alike container">
-        <header class="item-alike-header">
-          <h2 class="item-alike-title">People also looking at:</h2>
+      <section class="seasonal container">
+        <header class="hero-header">
+          <h2 class="latest-title">Peolple also loking at</h2>
         </header>
         <div class="latest-grid">
           <div class="latest-grid-item">
@@ -441,6 +317,5 @@
       </div>
     </div>
     <script src="./js/mobile-header.js"></script>
-    <script src="./js/fake-go-back.js"></script>
   </body>
 </html>
