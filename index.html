@@ -37,13 +37,19 @@
               <a href="#discounts-anchor" class="header-link">Special Offers</a>
             </li>
             <li class="header-list-item">
-              <a href="#filter-anchor" class="header-link"
-                >Our partner's goods</a
-              >
+              <a href="./shipping.html" class="header-link">Shipping</a>
             </li>
           </ul>
         </nav>
 
+        <form class="filter-form" data-search>
+          <input type="text" name="filter" id="filter" class="filter-input" />
+          <button type="submit" class="filter-btn">
+            <svg class="filter-search-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
         <div class="header-icons">
           <a href="./cart-example.html" class="cart-btn">
             <svg class="cart-icon" width="36" height="36">
@@ -60,9 +66,12 @@
     </header>
 
     <main>
+      <section class="filter-section container" id="filter-anchor">
+        <h1 class="hero-title">Luxury Cloth</h1>
+      </section>
+
       <section class="hero container">
         <header class="hero-header">
-          <h1 class="hero-title">Welcome to Luxury Cloth!</h1>
           <h2 class="latest-title" id="latest">
             You can check our latest arrivals!
           </h2>
@@ -188,115 +197,6 @@
           </div>
         </div>
       </aside>
-
-      <section class="filter-section container" id="filter-anchor">
-        <h2 class="filter-title">Want to explore something for you?</h2>
-        <h3 class="hero-categories-title">Categories</h3>
-        <nav class="hero-navigation">
-          <ul class="hero-nav-list">
-            <li class="hero-nav-item">
-              <button class="hero-nav-link" type="button">Shoes</button>
-            </li>
-            <li class="hero-nav-item">
-              <button
-                href=""
-                class="hero-nav-link hero-link-selected"
-                type="button"
-              >
-                Shirts
-              </button>
-            </li>
-            <li class="hero-nav-item">
-              <button href="" class="hero-nav-link" type="button">
-                Underwear
-              </button>
-            </li>
-            <li class="hero-nav-item">
-              <button href="" class="hero-nav-link" type="button">Pants</button>
-            </li>
-          </ul>
-        </nav>
-        <div class="filter">
-          <form class="filter-form" data-search>
-            <input type="text" name="filter" id="filter" class="filter-input" />
-            <button type="submit" class="filter-btn">
-              <svg class="filter-search-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-search"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
-        <div class="latest-grid is-hidden" id="fake-search-id">
-          <div class="latest-grid-item">
-            <a href="./item-example.html" class="latest-link"
-              ><img
-                src="./images/autumn_shirt.jpg"
-                alt="Autumn Shirt"
-                width=""
-                height=""
-            /></a>
-            <h3 class="latest-subtitle">Autumn Shirt</h3>
-            <p class="latest-description">
-              Don't miss out on the opportunity to showcase your love for autumn
-              in a fashionable and budget-friendly way. Grab your Autumn Vibes
-              Graphic Tee today and step into the season with style.
-            </p>
-            <p class="latest-price">$5.99</p>
-          </div>
-          <div class="latest-grid-item">
-            <a href="./item-example.html" class="latest-link"
-              ><img
-                src="./images/denim_jacket.jpg"
-                alt="Denim Jacket"
-                width=""
-                height=""
-            /></a>
-            <h3 class="latest-subtitle">Modern Denim Jacket</h3>
-            <p class="latest-description">
-              Elevate your style with our latest denim jacket featuring a modern
-              design and comfortable fit. Made from high-quality denim, this
-              jacket is perfect for both casual and semi-formal occasions. Stay
-              on-trend with this versatile piece.
-            </p>
-            <p class="latest-price">$59.99</p>
-          </div>
-          <div class="latest-grid-item">
-            <a href="./item-example.html" class="latest-link"
-              ><img
-                src="./images/floral_dress.jpg"
-                alt="Floral Maxi Dress"
-                width=""
-                height=""
-            /></a>
-            <h3 class="latest-subtitle">Chic Floral Maxi Dress</h3>
-            <p class="latest-description">
-              Embrace the beauty of floral patterns with our chic maxi dress.
-              This elegant and flowy dress is perfect for summer events and
-              special occasions. The flattering silhouette and vibrant floral
-              print make it a must-have for your wardrobe.
-            </p>
-            <p class="latest-price">$79.99</p>
-          </div>
-          <div class="latest-grid-item">
-            <a href="./item-example.html" class="latest-link"
-              ><img
-                src="./images/joger.jpg"
-                alt="Jogger Set"
-                width=""
-                height=""
-            /></a>
-            <h3 class="latest-subtitle">Athleisure Jogger Set</h3>
-            <p class="latest-description">
-              Stay comfortable and stylish with our athleisure jogger set. This
-              trendy two-piece ensemble combines fashion and functionality,
-              making it ideal for both workouts and casual outings. The set
-              includes a cozy hoodie and matching joggers for a laid-back yet
-              fashionable look.
-            </p>
-            <p class="latest-price">$49.99</p>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer class="main-footer">
@@ -313,7 +213,7 @@
           </a>
           <ul class="footer-list-nav">
             <li class="footer-list-item">
-              <a href="./index.html" class="footer-link">Catalogue</a>
+              <a href="./index.html" class="footer-link">Home</a>
             </li>
             <li class="footer-list-item">
               <a href="#latest" class="footer-link">Latest Arrivals</a>
@@ -322,9 +222,7 @@
               <a href="#discounts-anchor" class="footer-link">Special Offers</a>
             </li>
             <li class="footer-list-item">
-              <a href="#filter-anchor" class="footer-link"
-                >Our partner's goods</a
-              >
+              <a href="./shipping.html" class="footer-link">Shipping</a>
             </li>
           </ul>
         </nav>
@@ -346,7 +244,7 @@
         <nav class="header-navigation-mobile">
           <ul class="header-list-nav-mobile">
             <li class="header-list-item-mobile">
-              <a href="./index.html" class="header-link">Catalogue</a>
+              <a href="./index.html" class="header-link">Home</a>
             </li>
             <li class="header-list-item-mobile">
               <a href="#latest" class="header-link">Latest Arrivals</a>
@@ -355,9 +253,7 @@
               <a href="#discounts-anchor" class="header-link">Special Offers</a>
             </li>
             <li class="header-list-item-mobile">
-              <a href="#filter-anchor" class="header-link"
-                >Our partner's goods</a
-              >
+              <a href="./shipping.html" class="header-link">Shipping</a>
             </li>
           </ul>
         </nav>

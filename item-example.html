@@ -41,12 +41,19 @@
               >
             </li>
             <li class="header-list-item">
-              <a href="./index.html#filter-anchor" class="header-link"
-                >Our partner's goods</a
-              >
+              <a href="./shipping.html" class="header-link">Shipping</a>
             </li>
           </ul>
         </nav>
+
+        <form class="filter-form" data-search>
+          <input type="text" name="filter" id="filter" class="filter-input" />
+          <button type="submit" class="filter-btn">
+            <svg class="filter-search-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
 
         <div class="header-icons">
           <a href="./cart-example.html" class="cart-btn">
@@ -64,7 +71,7 @@
     </header>
 
     <main>
-      <aside class="item-go-back">
+      <aside class="item-go-back container">
         <button class="item-go-back-btn" id="go-back-id">
           <svg class="item-go-back-icon" width="25" height="25">
             <use href="./images/icons.svg#icon-back-arrow"></use>
@@ -116,59 +123,75 @@
 
       <section class="item-description container">
         <h2 class="item-title">Autumn Shirt</h2>
-        <p class="item-description">
-          Don't miss out on the opportunity to showcase your love for autumn in
-          a fashionable and budget-friendly way. Grab your Autumn Vibes Graphic
-          Tee today and step into the season with style.
-        </p>
+        <div class="item-description-additional-container">
+          <p class="item-description-text">
+            Don't miss out on the opportunity to showcase your love for autumn
+            in a fashionable and budget-friendly way. Grab your Autumn Vibes
+            Graphic Tee today and step into the season with style.
+          </p>
+          <ul class="item-description-list">
+            <li>
+              <strong>Rating:</strong>
+              <img
+                src="./images/5stars.png"
+                alt="5 Stars Rating (only for test)"
+                class="item-5stars-test"
+              />
+            </li>
+            <li><strong>Material:</strong> Cotton 100%</li>
+            <li><strong>Made in:</strong> Turkey</li>
+          </ul>
+        </div>
         <div class="item-form-aside-container">
           <form class="item-form">
-            <select name="sizes" id="sizes" class="item-size-picker">
-              <option value="32">32</option>
-              <option value="36">36</option>
-              <option value="42">42</option>
-              <option value="48">48</option>
-            </select>
-            <div class="item-color-picker">
-              <div class="item-color-picker-item">
-                <input
-                  type="radio"
-                  id="orange"
-                  name="item-color-radio"
-                  class="item-color-picker-input"
-                  required
-                />
-                <label for="orange">Orange</label>
-              </div>
-              <div class="item-color-picker-item">
-                <input
-                  type="radio"
-                  id="red"
-                  name="item-color-radio"
-                  class="item-color-picker-input"
-                  required
-                />
-                <label for="red">Red</label>
-              </div>
-              <div class="item-color-picker-item">
-                <input
-                  type="radio"
-                  id="black"
-                  name="item-color-radio"
-                  class="item-color-picker-input"
-                  required
-                />
-                <label for="black">Black</label>
-              </div>
-              <div class="item-color-picker-item">
-                <input
-                  type="radio"
-                  id="white"
-                  name="item-color-radio"
-                  class="item-color-picker-input"
-                  required
-                />
-                <label for="white">White</label>
+            <div class="item-form-inputs-container">
+              <select name="sizes" id="sizes" class="item-size-picker">
+                <option value="32">32</option>
+                <option value="36">36</option>
+                <option value="42">42</option>
+                <option value="48">48</option>
+              </select>
+              <div class="item-color-picker">
+                <div class="item-color-picker-item">
+                  <input
+                    type="radio"
+                    id="orange"
+                    name="item-color-radio"
+                    class="item-color-picker-input"
+                    required
+                  />
+                  <label for="orange">Orange</label>
+                </div>
+                <div class="item-color-picker-item">
+                  <input
+                    type="radio"
+                    id="red"
+                    name="item-color-radio"
+                    class="item-color-picker-input"
+                    required
+                  />
+                  <label for="red">Red</label>
+                </div>
+                <div class="item-color-picker-item">
+                  <input
+                    type="radio"
+                    id="black"
+                    name="item-color-radio"
+                    class="item-color-picker-input"
+                    required
+                  />
+                  <label for="black">Black</label>
+                </div>
+                <div class="item-color-picker-item">
+                  <input
+                    type="radio"
+                    id="white"
+                    name="item-color-radio"
+                    class="item-color-picker-input"
+                    required
+                  />
+                  <label for="white">White</label>
+                </div>
               </div>
             </div>
             <button type="submit" class="item-form-submit-btn">
@@ -177,13 +200,6 @@
           </form>
           <aside>
             <div class="item-aside-container">
-              <div class="item-rating">
-                <img
-                  src="./images/5stars.png"
-                  alt="5 Stars Rating (only for test)"
-                  class="item-5stars-test"
-                />
-              </div>
               <p class="item-price">$5.99</p>
             </div>
           </aside>
@@ -200,10 +216,20 @@
         <ul class="item-reviews-list">
           <li class="item-reviews-item">
             <div class="item-review-additional-div">
-              <svg class="item-review-icon-author" width="20" height="20">
-                <use href="./images/icons.svg#icon-user"></use>
-              </svg>
-              <h3 class="item-reviews-author">John K.</h3>
+              <div style="display: flex; gap: 5px; align-items: center">
+                <svg class="item-review-icon-author" width="20" height="20">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+                <h3 class="item-reviews-author">John K.</h3>
+              </div>
+              <div style="align-items: center; display: flex; gap: 20px">
+                <span class="item-reviews-author-date">12.01.2022</span>
+                <img
+                  src="./images/4stars.png"
+                  alt="4 Stars Rating"
+                  class="item-5stars-test"
+                />
+              </div>
             </div>
             <p class="item-reviews-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
@@ -214,10 +240,20 @@
           </li>
           <li class="item-reviews-item">
             <div class="item-review-additional-div">
-              <svg class="item-review-icon-author" width="20" height="20">
-                <use href="./images/icons.svg#icon-user"></use>
-              </svg>
-              <h3 class="item-reviews-author">Aurora L.</h3>
+              <div style="display: flex; gap: 5px; align-items: center">
+                <svg class="item-review-icon-author" width="20" height="20">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+                <h3 class="item-reviews-author">Aurora O.</h3>
+              </div>
+              <div style="align-items: center; display: flex; gap: 20px">
+                <span class="item-reviews-author-date">02.10.2023</span>
+                <img
+                  src="./images/5stars.png"
+                  alt="5 Stars Rating"
+                  class="item-5stars-test"
+                />
+              </div>
             </div>
             <p class="item-reviews-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
@@ -231,7 +267,7 @@
 
       <section class="item-alike container">
         <header class="item-alike-header">
-          <h2 class="item-alike-title">You can check similar items to this!</h2>
+          <h2 class="item-alike-title">People also looking at:</h2>
         </header>
         <div class="latest-grid">
           <div class="latest-grid-item">
@@ -320,7 +356,7 @@
           </a>
           <ul class="footer-list-nav">
             <li class="footer-list-item">
-              <a href="./index.html" class="footer-link">Catalogue</a>
+              <a href="./index.html" class="footer-link">Home</a>
             </li>
             <li class="footer-list-item">
               <a href="./index.html#latest" class="footer-link"
@@ -333,9 +369,7 @@
               >
             </li>
             <li class="footer-list-item">
-              <a href="./index.html#filter-anchor" class="footer-link"
-                >Our partner's goods</a
-              >
+              <a href="./shipping.html" class="footer-link">Shipping</a>
             </li>
           </ul>
         </nav>
@@ -357,7 +391,7 @@
         <nav class="header-navigation-mobile">
           <ul class="header-list-nav-mobile">
             <li class="header-list-item-mobile">
-              <a href="./index.html" class="header-link">Catalogue</a>
+              <a href="./index.html" class="header-link">Home</a>
             </li>
             <li class="header-list-item-mobile">
               <a href="./index.html#latest" class="header-link"
@@ -370,9 +404,7 @@
               >
             </li>
             <li class="header-list-item-mobile">
-              <a href="./index.html#filter-anchor" class="header-link"
-                >Our partner's goods</a
-              >
+              <a href="./shipping.html" class="header-link">Shipping</a>
             </li>
           </ul>
         </nav>
