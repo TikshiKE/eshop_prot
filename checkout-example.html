@@ -162,7 +162,7 @@
 
             <div class="checkout-radio-main-div">
               <h2 class="checkout-radio-title">
-                Please, choose a delivery option
+                Please choose a delivery option
               </h2>
               <ul class="checkout-radio-list">
                 <li class="checkout-item">
@@ -204,6 +204,53 @@
                     />
                   </div>
                   <p class="checkout-price">$0.99</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="checkout-radio-main-div">
+              <h2 class="checkout-radio-title">
+                Please choose a payment method
+              </h2>
+              <ul class="checkout-radio-list">
+                <li class="checkout-item">
+                  <div class="checkout-radio-div">
+                    <label for="card" class="checkout-form-label">By card</label
+                    ><input
+                      type="radio"
+                      id="card"
+                      name="radio-checkout-payment"
+                      class="checkout-form-radio"
+                    />
+                  </div>
+                  <p class="checkout-price">No additional fee</p>
+                </li>
+                <li class="checkout-item">
+                  <div class="checkout-radio-div">
+                    <label for="bankTransfer" class="checkout-form-label"
+                      >Bank Transfer</label
+                    ><input
+                      type="radio"
+                      id="bankTransfer"
+                      name="radio-checkout-payment"
+                      class="checkout-form-radio"
+                      required
+                    />
+                  </div>
+                  <p class="checkout-price">5% commission</p>
+                </li>
+                <li class="checkout-item">
+                  <div class="checkout-radio-div">
+                    <label for="cash" class="checkout-form-label"
+                      >Apple/Google pay</label
+                    ><input
+                      type="radio"
+                      id="cash"
+                      name="radio-checkout-payment"
+                      class="checkout-form-radio"
+                    />
+                  </div>
+                  <p class="checkout-price">1% commission</p>
                 </li>
               </ul>
             </div>
