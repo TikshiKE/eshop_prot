@@ -80,184 +80,189 @@
     <main>
       <section class="container">
         <form class="checkout-form">
-          <div class="checkout-input-div">
-            <h1 class="checkout-input-title">Please, fill delivery details:</h1>
-            <ul class="checkout-list">
-              <li class="checkout-item-inputs">
-                <label for="firstName" class="checkout-form-label"
-                  >First Name: </label
-                ><input
-                  type="text"
-                  id="firstName"
-                  name="firstName"
-                  class="checkout-form-input"
-                  placeholder="John"
-                  required
-                />
-              </li>
-              <li class="checkout-item-inputs">
-                <label for="lastName" class="checkout-form-label"
-                  >Last Name: </label
-                ><input
-                  type="text"
-                  id="lastName"
-                  name="lastName"
-                  class="checkout-form-input"
-                  placeholder="Doe"
-                  required
-                />
-              </li>
-              <li class="checkout-item-inputs">
-                <label for="address" class="checkout-form-label"
-                  >Address: </label
-                ><input
-                  type="text"
-                  id="address"
-                  name="address"
-                  class="checkout-form-input"
-                  placeholder="Jiráskovo nám. 1981/6"
-                  required
-                />
-              </li>
-              <li class="checkout-item-inputs">
-                <label for="index" class="checkout-form-label">Index: </label
-                ><input
-                  type="text"
-                  id="index"
-                  name="index"
-                  class="checkout-form-input"
-                  placeholder="120 00"
-                  required
-                />
-              </li>
-              <li class="checkout-item-inputs">
-                <label for="phoneNumber" class="checkout-form-label"
-                  >Phone number: </label
-                ><input
-                  type="tel"
-                  id="phoneNumber"
-                  name="phoneNumber"
-                  class="checkout-form-input"
-                  placeholder="111 111 111"
-                  required
-                />
-              </li>
-              <li class="checkout-item-inputs">
-                <label for="emailUser" class="checkout-form-label"
-                  >Email: </label
-                ><input
-                  type="email"
-                  id="emailUser"
-                  name="emailUser"
-                  class="checkout-form-input"
-                  placeholder="funStuff@funMail.com"
-                  required
-                />
-              </li>
-            </ul>
-          </div>
-
-          <div class="checkout-radio-main-div">
-            <h2 class="checkout-radio-title">
-              Please, choose a delivery option
-            </h2>
-            <ul class="checkout-radio-list">
-              <li class="checkout-item">
-                <div class="checkout-radio-div">
-                  <label for="courier" class="checkout-form-label"
-                    >Courier</label
+          <div class="checkout-additional-div">
+            <div class="checkout-input-div">
+              <h1 class="checkout-input-title">
+                Please fill delivery details:
+              </h1>
+              <ul class="checkout-list">
+                <li class="checkout-item-inputs">
+                  <label for="firstName" class="checkout-form-label"
+                    >First Name: </label
                   ><input
-                    type="radio"
-                    id="courier"
-                    name="radio-checkout"
-                    class="checkout-form-radio"
-                  />
-                </div>
-                <p class="checkout-price">$2.99</p>
-              </li>
-              <li class="checkout-item">
-                <div class="checkout-radio-div">
-                  <label for="selfPickup" class="checkout-form-label"
-                    >Self-Pickup</label
-                  ><input
-                    type="radio"
-                    id="selfPickup"
-                    name="radio-checkout"
-                    class="checkout-form-radio"
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    class="checkout-form-input"
+                    placeholder="John"
                     required
                   />
-                </div>
-                <p class="checkout-price">Free</p>
-              </li>
-              <li class="checkout-item">
-                <div class="checkout-radio-div">
-                  <label for="postBox" class="checkout-form-label"
-                    >Post Box</label
+                </li>
+                <li class="checkout-item-inputs">
+                  <label for="lastName" class="checkout-form-label"
+                    >Last Name: </label
                   ><input
-                    type="radio"
-                    id="postBox"
-                    name="radio-checkout"
-                    class="checkout-form-radio"
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    class="checkout-form-input"
+                    placeholder="Doe"
+                    required
                   />
-                </div>
-                <p class="checkout-price">$0.99</p>
-              </li>
+                </li>
+                <li class="checkout-item-inputs">
+                  <label for="address" class="checkout-form-label"
+                    >Address: </label
+                  ><input
+                    type="text"
+                    id="address"
+                    name="address"
+                    class="checkout-form-input"
+                    placeholder="Jiráskovo nám. 1981/6"
+                    required
+                  />
+                </li>
+                <li class="checkout-item-inputs">
+                  <label for="index" class="checkout-form-label">Index: </label
+                  ><input
+                    type="text"
+                    id="index"
+                    name="index"
+                    class="checkout-form-input"
+                    placeholder="120 00"
+                    required
+                  />
+                </li>
+                <li class="checkout-item-inputs">
+                  <label for="phoneNumber" class="checkout-form-label"
+                    >Phone number: </label
+                  ><input
+                    type="tel"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    class="checkout-form-input"
+                    placeholder="111 111 111"
+                    required
+                  />
+                </li>
+                <li class="checkout-item-inputs">
+                  <label for="emailUser" class="checkout-form-label"
+                    >Email: </label
+                  ><input
+                    type="email"
+                    id="emailUser"
+                    name="emailUser"
+                    class="checkout-form-input"
+                    placeholder="funStuff@funMail.com"
+                    required
+                  />
+                </li>
+              </ul>
+            </div>
+
+            <div class="checkout-radio-main-div">
+              <h2 class="checkout-radio-title">
+                Please, choose a delivery option
+              </h2>
+              <ul class="checkout-radio-list">
+                <li class="checkout-item">
+                  <div class="checkout-radio-div">
+                    <label for="courier" class="checkout-form-label"
+                      >Courier</label
+                    ><input
+                      type="radio"
+                      id="courier"
+                      name="radio-checkout"
+                      class="checkout-form-radio"
+                    />
+                  </div>
+                  <p class="checkout-price">$2.99</p>
+                </li>
+                <li class="checkout-item">
+                  <div class="checkout-radio-div">
+                    <label for="selfPickup" class="checkout-form-label"
+                      >Self-Pickup</label
+                    ><input
+                      type="radio"
+                      id="selfPickup"
+                      name="radio-checkout"
+                      class="checkout-form-radio"
+                      required
+                    />
+                  </div>
+                  <p class="checkout-price">Free</p>
+                </li>
+                <li class="checkout-item">
+                  <div class="checkout-radio-div">
+                    <label for="postBox" class="checkout-form-label"
+                      >Post Box</label
+                    ><input
+                      type="radio"
+                      id="postBox"
+                      name="radio-checkout"
+                      class="checkout-form-radio"
+                    />
+                  </div>
+                  <p class="checkout-price">$0.99</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="checkout-cart-border">
+            <ul class="cart-list">
+              <div class="cart-item-div">
+                <li class="cart-item">
+                  <div class="cart-item-img-container">
+                    <p class="cart-number-of">1 x</p>
+
+                    <img
+                      src="./images/autumn_shirt.jpg"
+                      alt="Autumn Shirt"
+                      class="cart-list-img"
+                    />
+                    <p class="cart-color">Color: Orange</p>
+                    <p class="cart-size">Size: 32</p>
+                  </div>
+                  <div class="cart-item-others">
+                    <p class="cart-price">
+                      Price: <span class="cart-price-span">$11.98</span>
+                    </p>
+                    <button type="button" class="cart-close-btn">
+                      <svg class="mobile-close-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-close"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+              </div>
+
+              <div class="cart-item-div">
+                <li class="cart-item">
+                  <div class="cart-item-img-container">
+                    <p class="cart-number-of">2 x</p>
+
+                    <img
+                      src="./images/velvet_jacket.jpg"
+                      alt="Velvet Jacket"
+                      class="cart-list-img"
+                    />
+                    <p class="cart-color">Color: Black</p>
+                    <p class="cart-size">Size: 36</p>
+                  </div>
+                  <div class="cart-item-others">
+                    <p class="cart-price">
+                      Price: <span class="cart-price-span">$25.99</span>
+                    </p>
+                    <button type="button" class="cart-close-btn">
+                      <svg class="mobile-close-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-close"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+              </div>
             </ul>
           </div>
-
-          <ul class="cart-list">
-            <div class="cart-item-div">
-              <li class="cart-item">
-                <div class="cart-item-img-container">
-                  <p class="cart-number-of">1 x</p>
-
-                  <img
-                    src="./images/autumn_shirt.jpg"
-                    alt="Autumn Shirt"
-                    class="cart-list-img"
-                  />
-                  <p class="cart-color">Color: Orange</p>
-                  <p class="cart-size">Size: 32</p>
-                </div>
-                <div class="cart-item-others">
-                  <p class="cart-price">
-                    Price: <span class="cart-price-span">$11.98</span>
-                  </p>
-                  <button type="button" class="cart-close-btn">
-                    <svg class="mobile-close-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-close"></use>
-                    </svg>
-                  </button>
-                </div>
-              </li>
-            </div>
-
-            <div class="cart-item-div">
-              <li class="cart-item">
-                <div class="cart-item-img-container">
-                  <p class="cart-number-of">2 x</p>
-
-                  <img
-                    src="./images/velvet_jacket.jpg"
-                    alt="Velvet Jacket"
-                    class="cart-list-img"
-                  />
-                  <p class="cart-color">Color: Black</p>
-                  <p class="cart-size">Size: 36</p>
-                </div>
-                <div class="cart-item-others">
-                  <p class="cart-price">
-                    Price: <span class="cart-price-span">$25.99</span>
-                  </p>
-                  <button type="button" class="cart-close-btn">
-                    <svg class="mobile-close-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-close"></use>
-                    </svg>
-                  </button>
-                </div>
-              </li>
-            </div>
-          </ul>
           <p class="cart-total-price">
             Total price: <span class="cart-total-price-span">$37.97</span>
           </p>

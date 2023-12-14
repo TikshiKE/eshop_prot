@@ -37,7 +37,7 @@
   }
   .header-list-nav {
     display: flex;
-    gap: 40px;
+    gap: 20px;
   }
   .header-navigation {
     gap: 50px;
@@ -153,6 +153,15 @@
   .item-form-aside-container {
     max-width: 850px;
     margin: 0 auto;
+  }
+  .checkout-additional-div {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+  .checkout-radio-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 }
 /**************DESKTOP*************/
@@ -309,5 +318,17 @@
   .catalogue-link:focus {
     color: var(--white-color);
     background-color: var(--primary-black-color);
+  }
+  .filter-input {
+    max-width: 250px;
+  }
+  .header-list-nav {
+    gap: 40px;
+  }
+  .shipping-description {
+    max-width: 500px;
+  }
+  .checkout-additional-div {
+    gap: 300px;
   }
 }
